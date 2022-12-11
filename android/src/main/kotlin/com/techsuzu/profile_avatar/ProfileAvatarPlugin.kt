@@ -17,7 +17,7 @@ class ProfileAvatarPlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "profile_avatar")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "profile_avatar_ts")
     channel.setMethodCallHandler(this)
   }
 

@@ -1,10 +1,10 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:profile_avatar/profile_avatar_method_channel.dart';
+import 'package:profile_avatar_ts/profile_avatar_method_channel.dart';
 
 void main() {
   MethodChannelProfileAvatar platform = MethodChannelProfileAvatar();
-  const MethodChannel channel = MethodChannel('profile_avatar');
+  const MethodChannel channel = MethodChannel('profile_avatar_ts');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 

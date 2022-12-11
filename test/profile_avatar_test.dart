@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:profile_avatar/profile_avatar.dart';
-import 'package:profile_avatar/profile_avatar_platform_interface.dart';
-import 'package:profile_avatar/profile_avatar_method_channel.dart';
+import 'package:profile_avatar_ts/profile_avatar_ts.dart';
+import 'package:profile_avatar_ts/profile_avatar_platform_interface.dart';
+import 'package:profile_avatar_ts/profile_avatar_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockProfileAvatarPlatform

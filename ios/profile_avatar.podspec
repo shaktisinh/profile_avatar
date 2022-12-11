@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint profile_avatar.podspec` to validate before publishing.
+# Run `pod lib lint profile_avatar_ts.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'profile_avatar'
+  s.name             = 'profile_avatar_ts'
   s.version          = '0.0.1'
   s.summary          = 'Generate your profile avatar by  Image url, name or by default it will return avatar icon, Its pretty easy to use and fully constomizable based on shape, color, size and style so all control is on your hand.'
   s.description      = <<-DESC

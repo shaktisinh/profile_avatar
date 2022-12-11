@@ -1,6 +1,6 @@
 # profile_avatar_example
 
-Demonstrates how to use the profile_avatar plugin.
+Demonstrates how to use the profile_avatar_ts plugin.
 
 ## Getting Started
 

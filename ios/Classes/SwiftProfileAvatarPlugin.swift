@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftProfileAvatarPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "profile_avatar", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "profile_avatar_ts", binaryMessenger: registrar.messenger())
     let instance = SwiftProfileAvatarPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }

@@ -7,7 +7,7 @@ import 'profile_avatar_platform_interface.dart';
 class MethodChannelProfileAvatar extends ProfileAvatarPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('profile_avatar');
+  final methodChannel = const MethodChannel('profile_avatar_ts');
 
   @override
   Future<String?> getPlatformVersion() async {
