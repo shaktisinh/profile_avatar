@@ -1,7 +1,7 @@
 name: profile_avatar_ts
-description: Generate your profile avatar by  Image url, name or by default it will return avatar icon, Its pretty easy to use and fully customizable based on shape, color, size and style so all control is on your hand.
-version: 0.0.1
-homepage: https://github.com/shaktisinh/profile_avatar_ts
+description: Generate fully customizable avatar based on shape, color, size and style.
+version: 0.0.2
+homepage: https://github.com/shaktisinh/profile_avatar
 
 environment:
   sdk: '>=2.18.2 <3.0.0'

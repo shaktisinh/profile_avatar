@@ -1,37 +1,49 @@
 import 'package:flutter/material.dart';
 
-Widget Avatar(
+Widget avatar(
     {String? image,
-      String? name,
-      double? borderRadius,
-      double? borderWidth,
-      Color? borderColor,
-      double? avatarSize,
-      TextStyle? avatarTextStyle,
-      Widget? defaultAvatar}) {
-
+    String? name,
+    double? borderRadius,
+    double? borderWidth,
+    Color? borderColor,
+    double? avatarSize,
+    TextStyle? avatarTextStyle,
+    Widget? defaultAvatar}) {
   double radius = borderRadius ?? 0;
   double size = avatarSize ?? 50;
   double widthBorder = borderWidth ?? 2;
   Color colorBorder = borderColor ?? Colors.black;
-  TextStyle textStyle = avatarTextStyle ?? TextStyle(
-    fontSize: size,
-    color: borderColor,
-    fontWeight: FontWeight.bold,
-  );
-  Widget avatar = defaultAvatar?? Icon(Icons.person_outline, size: size, color: borderColor,);
+  TextStyle textStyle = avatarTextStyle ??
+      TextStyle(
+        fontSize: size,
+        color: borderColor,
+        fontWeight: FontWeight.bold,
+      );
+  Widget avatar = defaultAvatar ??
+      Icon(
+        Icons.person_outline,
+        size: size,
+        color: borderColor,
+      );
 
   return ClipRRect(
     borderRadius: BorderRadius.circular(radius),
     child: SizedBox.fromSize(
       size: Size.fromRadius(size),
-      child: _item(image, name, radius, widthBorder, colorBorder, textStyle,avatar),
+      child: _item(
+          image, name, radius, widthBorder, colorBorder, textStyle, avatar),
     ),
   );
 }
 
-Widget _item(String? image, String? name, double borderRadius,
-    double borderWidth, Color borderColor, TextStyle textStyle, Widget defaultAvatar) {
+Widget _item(
+    String? image,
+    String? name,
+    double borderRadius,
+    double borderWidth,
+    Color borderColor,
+    TextStyle textStyle,
+    Widget defaultAvatar) {
   if (image != null &&
       image.isNotEmpty == true &&
       image.contains("file:") == false) {
@@ -41,7 +53,10 @@ Widget _item(String? image, String? name, double borderRadius,
             border: Border.all(width: borderWidth, color: borderColor),
             borderRadius: BorderRadius.circular(borderRadius),
             image: DecorationImage(
-                fit: BoxFit.cover, image: NetworkImage(image,))));
+                fit: BoxFit.cover,
+                image: NetworkImage(
+                  image,
+                ))));
   } else if (name != null && name.isNotEmpty) {
     return Container(
         alignment: Alignment.center,
@@ -60,7 +75,7 @@ Widget _item(String? image, String? name, double borderRadius,
           border: Border.all(width: borderWidth, color: borderColor),
           borderRadius: BorderRadius.circular(borderRadius),
         ),
-        child:defaultAvatar);
+        child: defaultAvatar);
   }
 }
 

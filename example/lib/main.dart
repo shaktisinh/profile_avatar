@@ -30,11 +30,11 @@ class _MyAppState extends State<MyApp> {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                Avatar(borderRadius: 50, avatarSize:80,borderColor: Colors.green, borderWidth: 5,name: "Techsuzu", ),
+                avatar(borderRadius: 50, avatarSize:80,borderColor: Colors.green, borderWidth: 5,name: "Techsuzu", ),
                 const SizedBox(
                   height: 20,
                 ),
-                Avatar(borderRadius: 80, avatarSize:80,borderColor: Colors.blue, borderWidth: 5,)
+                avatar(borderRadius: 80, avatarSize:80,borderColor: Colors.blue, borderWidth: 5,)
               ],
             ),
           )),
